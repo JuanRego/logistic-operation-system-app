@@ -6,7 +6,7 @@ export const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(
-    JSON.parse(localStorage.getItem("@leilao user")) || false
+    JSON.parse(localStorage.getItem("@system user")) || false
   );
   const [userOperations, setUserOperations] = useState([]);
 
