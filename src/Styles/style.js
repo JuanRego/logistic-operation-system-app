@@ -12,10 +12,10 @@ export const GlobalStyle = createGlobalStyle`
 :root{
     --whiteFixed: #FFFFFF;
     --black: #000000;
-    --brand1: #4529E6;
-    --brand2: #5126EA;
-    --brand3: #B0A6F0;
-    --brand4: #EDEAFD;
+    --brand1: #f5f9f2;
+    --brand2: #67718e;
+    --brand3: #2e3867;
+    --brand4: #ffdd9a;
     --grey0: #0B0D0D;
     --grey1: #212529;
     --grey2: #495057;
@@ -39,6 +39,12 @@ export const GlobalStyle = createGlobalStyle`
     --random4: #7000FF;
     
 }
+
+:link{
+    
+    text-decoration: none;
+}
+
 h1, h2, h3, h4, p, span {
     font-weight: 700;
 }
@@ -47,7 +53,7 @@ button {
     cursor: pointer;
 }
 body{
-    background: var(--grey8);
+    background: var(--brand4);
 
 }
 
@@ -62,3 +68,5 @@ body{
   }
 
 `;
+
+export default GlobalStyle;

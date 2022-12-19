@@ -1,6 +1,6 @@
 import { Switch, Route, useLocation } from "react-router-dom";
 
-import HomePage from "../Pages/Home";
+import Home from "../Pages/Home";
 import Profile from "../Pages/Profile";
 import Register from "../Pages/Register";
 import Login from "../Pages/Login";
@@ -13,7 +13,7 @@ const Routes = () => {
   return (
     <Switch location={location} key={location.pathname}>
       <Route exact path="/">
-        <HomePage />
+        <Home />
       </Route>
       <Route path="/login">
         <Login />
@@ -30,6 +30,7 @@ const Routes = () => {
       <Route path="/notverified">
         <NotVerified />
       </Route>
+      
     </Switch>
   );
 };
